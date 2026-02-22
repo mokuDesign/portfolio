@@ -201,7 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = btn.dataset.filter;
 
       workCards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
+        const categories = card.dataset.category.split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
           card.classList.remove('is-hidden');
           card.style.animation = 'fadeInUp 0.5s ease forwards';
         } else {
@@ -210,6 +211,46 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // ============================
+  // Lightbox
+  // ============================
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+
+  if (lightbox) {
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const img = card.querySelector('.work-card-image');
+        const title = card.querySelector('.work-card-title');
+        if (img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCaption.textContent = title ? title.textContent : '';
+          lightbox.classList.add('is-active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-active')) {
+        closeLightbox();
+      }
+    });
+  }
 
   // ============================
   // Magnetic Effect on hover elements (subtle)

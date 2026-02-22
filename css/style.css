@@ -850,6 +850,7 @@ button {
   overflow: hidden;
   background-color: var(--c-gray-100);
   aspect-ratio: 4 / 3;
+  cursor: pointer;
   transition: transform var(--duration-fast) var(--ease-out-expo),
     opacity var(--duration-fast) ease;
 }
@@ -861,7 +862,8 @@ button {
 .work-card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
   transition: transform var(--duration-slow) var(--ease-out-expo);
 }
 
@@ -1230,4 +1232,89 @@ button {
     font-size: 0.7rem;
     padding: 4px 8px;
   }
+}
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  cursor: pointer;
+}
+
+.lightbox.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+  transform: scale(0.9);
+  transition: transform 0.3s var(--ease-out-expo);
+}
+
+.lightbox.is-active .lightbox-img {
+  transform: scale(1);
+}
+
+.lightbox-caption {
+  text-align: center;
+  color: var(--c-white);
+  font-family: var(--ff-ja);
+  font-size: 0.9rem;
+  margin-top: var(--sp-3);
+  letter-spacing: 0.05em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.lightbox-close::before,
+.lightbox-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 2px;
+  background: var(--c-white);
+  transition: opacity 0.2s ease;
+}
+
+.lightbox-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.lightbox-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.lightbox-close:hover::before,
+.lightbox-close:hover::after {
+  opacity: 0.6;
 }
