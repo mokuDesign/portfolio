@@ -804,6 +804,26 @@ button {
   margin-bottom: var(--sp-2);
 }
 
+mark.text-marker {
+  color: var(--c-gray-600);
+  background: none;
+  position: relative;
+  display: inline;
+  padding: 0.15em 0.3em;
+  background-image: linear-gradient(var(--c-yellow), var(--c-yellow));
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  transition: background-size 0.6s var(--ease-out-expo),
+    color 0.3s ease 0.3s;
+}
+
+.reveal-right.is-visible mark.text-marker,
+.reveal.is-visible mark.text-marker {
+  background-size: 100% 100%;
+  color: var(--c-black);
+}
+
 .about-text p {
   font-size: 0.95rem;
   color: var(--c-gray-600);
