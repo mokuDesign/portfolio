@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moku design — Web Design & Development</title>
+  <meta name="description" content="moku design｜Webデザイン・コーディング・WordPress・広告デザイン。広告代理店10年の経験を活かしたフリーランスデザイナー。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading">
+    <img src="img/logo.png" alt="moku design" class="loading-logo">
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#hero" class="header-logo-link" data-cursor-hover>
+      <img src="img/logo.png" alt="moku design" class="header-logo">
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link" data-cursor-hover>プロフィール</a></li>
+        <li><a href="#services" class="nav-link" data-cursor-hover>スキルセット</a></li>
+        <li><a href="#works" class="nav-link" data-cursor-hover>実績</a></li>
+        <li><a href="#skills" class="nav-link" data-cursor-hover>スキル</a></li>
+        <li><a href="#contact" class="nav-link" data-cursor-hover>お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" data-cursor-hover>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="nav-link" data-cursor-hover>プロフィール</a>
+    <a href="#services" class="nav-link" data-cursor-hover>スキルセット</a>
+    <a href="#works" class="nav-link" data-cursor-hover>実績</a>
+    <a href="#skills" class="nav-link" data-cursor-hover>スキル</a>
+    <a href="#contact" class="nav-link" data-cursor-hover>お問い合わせ</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero section" id="hero">
+    <div class="hero-bg-text hero-bg-text--top" data-parallax="0.15">DESIGN</div>
+    <div class="hero-bg-text hero-bg-text--bottom" data-parallax="-0.1">DEVELOP</div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-title-line"><span>Design that</span></span>
+        <span class="hero-title-line"><span>speaks.</span></span>
+      </h1>
+      <p class="hero-subtitle">想いを形に、デザインで伝える。</p>
+    </div>
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Scroll</span>
+      <span class="hero-scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="section-inner">
+      <span class="section-label reveal">プロフィール</span>
+      <div class="section-divider reveal"></div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image-placeholder">
+            <span>Photo</span>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h3>広告代理店10年の経験から、<br>フリーランスへ。</h3>
+          <p>
+            デザイナー、ディレクター、フロントエンドエンジニアとして
+            広告代理店で10年間、多種多様なプロジェクトに携わってきました。
+          </p>
+          <p>
+            企画・デザインからコーディング・運用まで、
+            ワンストップで対応できることが強みです。
+            クライアントのビジネスを深く理解し、
+            成果につながるデザインをご提案します。
+          </p>
+          <div class="about-stats">
+            <div class="reveal">
+              <div class="about-stat-number">10+</div>
+              <div class="about-stat-label">年の経験</div>
+            </div>
+            <div class="reveal">
+              <div class="about-stat-number">200+</div>
+              <div class="about-stat-label">プロジェクト</div>
+            </div>
+            <div class="reveal">
+              <div class="about-stat-number">50+</div>
+              <div class="about-stat-label">クライアント</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="section-inner">
+      <span class="section-label reveal">SKILL</span>
+      <h2 class="section-title reveal">スキルセット</h2>
+      <div class="section-divider reveal"></div>
+      <div class="services-grid stagger-children">
+
+        <div class="service-card reveal" data-cursor-hover>
+          <span class="service-card-number">01</span>
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48">
+              <rect x="6" y="6" width="36" height="28" rx="2" />
+              <line x1="6" y1="28" x2="42" y2="28" />
+              <line x1="18" y1="38" x2="30" y2="38" />
+              <line x1="24" y1="34" x2="24" y2="38" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Webデザイン</h3>
+          <p class="service-card-desc">
+            ユーザー体験を重視した、美しく機能的なWebサイトをデザインします。
+            ブランドの世界観を的確に表現し、成果につながるデザインを。
+          </p>
+          <div class="service-card-line"></div>
+        </div>
+
+        <div class="service-card reveal" data-cursor-hover>
+          <span class="service-card-number">02</span>
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48">
+              <polyline points="16,14 8,24 16,34" />
+              <polyline points="32,14 40,24 32,34" />
+              <line x1="28" y1="10" x2="20" y2="38" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">コーディング</h3>
+          <p class="service-card-desc">
+            HTML/CSS/JavaScriptによる高品質なコーディング。
+            レスポンシブ対応、アニメーション実装、パフォーマンス最適化まで。
+          </p>
+          <div class="service-card-line"></div>
+        </div>
+
+        <div class="service-card reveal" data-cursor-hover>
+          <span class="service-card-number">03</span>
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48">
+              <circle cx="18" cy="24" r="4" />
+              <path
+                d="M26,16 L26,12 C26,10 28,8 30,8 L36,8 C38,8 40,10 40,12 L40,36 C40,38 38,40 36,40 L12,40 C10,40 8,38 8,36 L8,20 C8,18 10,16 12,16 Z" />
+              <path d="M30,24 L36,24" />
+              <path d="M30,30 L36,30" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">WordPress</h3>
+          <p class="service-card-desc">
+            オリジナルテーマ開発からカスタマイズまで。
+            更新しやすく、SEOに強いWordPressサイトを構築します。
+          </p>
+          <div class="service-card-line"></div>
+        </div>
+
+        <div class="service-card reveal" data-cursor-hover>
+          <span class="service-card-number">04</span>
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48">
+              <rect x="8" y="6" width="32" height="36" rx="2" />
+              <line x1="14" y1="14" x2="34" y2="14" />
+              <line x1="14" y1="20" x2="28" y2="20" />
+              <rect x="14" y="26" width="20" height="10" rx="1" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">広告デザイン</h3>
+          <p class="service-card-desc">
+            バナー、チラシ、パンフレットなど広告デザイン全般。
+            広告代理店での豊富な経験を活かした、訴求力のあるデザインを。
+          </p>
+          <div class="service-card-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section class="works section" id="works">
+    <div class="section-inner">
+      <span class="section-label reveal">WORKS</span>
+      <h2 class="section-title reveal">制作実績</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="works-filter reveal">
+        <button class="works-filter-btn is-active" data-filter="all" data-cursor-hover>すべて</button>
+        <button class="works-filter-btn" data-filter="web" data-cursor-hover>Web</button>
+        <button class="works-filter-btn" data-filter="graphic" data-cursor-hover>グラフィック</button>
+        <button class="works-filter-btn" data-filter="wordpress" data-cursor-hover>WordPress</button>
+      </div>
+
+      <div class="works-grid stagger-children">
+        <div class="work-card reveal" data-category="web" data-cursor-hover>
+          <img src="img/works/web1.png" alt="コーポレートサイト" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">コーポレートサイト</span>
+            <span class="work-card-category">Web Design</span>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="graphic" data-cursor-hover>
+          <img src="img/works/graphic1.png" alt="ブランドアイデンティティ" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">ブランドアイデンティティ</span>
+            <span class="work-card-category">グラフィック</span>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="wordpress" data-cursor-hover>
+          <img src="img/works/wp1.png" alt="ブログサイト" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">ブログサイト</span>
+            <span class="work-card-category">WordPress</span>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="web" data-cursor-hover>
+          <img src="img/works/web2.png" alt="スタートアップLP" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">スタートアップLP</span>
+            <span class="work-card-category">Web Design</span>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="graphic" data-cursor-hover>
+          <img src="img/works/graphic2.png" alt="プロモーションポスター" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">プロモーションポスター</span>
+            <span class="work-card-category">グラフィック</span>
+          </div>
+        </div>
+
+        <div class="work-card reveal" data-category="web" data-cursor-hover>
+          <img src="img/works/web3.png" alt="クリエイティブエージェンシー" class="work-card-image">
+          <div class="work-card-overlay">
+            <span class="work-card-title">クリエイティブエージェンシー</span>
+            <span class="work-card-category">Web Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="section-inner">
+      <span class="section-label reveal">TOOLS</span>
+      <h2 class="section-title reveal">使用ツール</h2>
+      <div class="section-divider reveal"></div>
+      <div class="skills-grid stagger-children">
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+              <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+              <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+              <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+              <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+            </svg>
+          </span>
+          <span class="skill-name">Figma</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M7 12h4l2-5 2 10 2-5h4" />
+            </svg>
+          </span>
+          <span class="skill-name">Photoshop</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.586 7.586" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </span>
+          <span class="skill-name">Illustrator</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9" />
+              <path d="M4 4a16 16 0 0 1 16 16" />
+              <circle cx="5" cy="19" r="1" />
+              <rect x="12" y="2" width="8" height="12" rx="2" />
+              <path d="M16 2v4" />
+            </svg>
+          </span>
+          <span class="skill-name">After Effects</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16,18 22,12 16,6" />
+              <polyline points="8,6 2,12 8,18" />
+              <line x1="14" y1="4" x2="10" y2="20" />
+            </svg>
+          </span>
+          <span class="skill-name">HTML / CSS</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+              <path d="M7 15l3-3-3-3" />
+              <line x1="13" y1="15" x2="17" y2="15" />
+            </svg>
+          </span>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" stroke="none">
+              <path
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM3.443 12c0-1.584.43-3.067 1.18-4.34l3.254 8.92C5.45 15.406 3.443 13.903 3.443 12zm8.557 8.557c-.882 0-1.73-.14-2.525-.398l2.68-7.788 2.747 7.527c.018.044.04.085.063.124a8.522 8.522 0 01-2.965.535zm1.2-12.55c.538-.028 1.023-.084 1.023-.084.482-.057.425-.764-.057-.737 0 0-1.45.114-2.384.114-.878 0-2.355-.114-2.355-.114-.482-.028-.538.708-.057.737 0 0 .457.056.938.084L11.89 12l-1.97 5.907L6.65 7.007c.538-.028 1.023-.084 1.023-.084.482-.057.425-.764-.057-.737 0 0-1.45.114-2.384.114-.168 0-.366-.004-.578-.012A8.533 8.533 0 0112 3.443c2.523 0 4.82 1.088 6.408 2.823-.04-.003-.08-.007-.122-.007-.878 0-1.5.764-1.5 1.585 0 .737.425 1.36.878 2.097.34.595.737 1.36.737 2.462 0 .764-.293 1.65-.68 2.886l-.89 2.974-3.231-9.613z" />
+            </svg>
+          </span>
+          <span class="skill-name">WordPress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="section-inner">
+      <span class="section-label reveal">CONTACT</span>
+      <h2 class="section-title reveal">お問い合わせ</h2>
+      <div class="section-divider reveal"></div>
+      <p class="contact-desc reveal">
+        お仕事のご相談・お見積もりなど、<br>お気軽にお問い合わせください。
+      </p>
+      <a href="mailto:a7484d@gmail.com" class="contact-email reveal" data-cursor-hover>
+        a7484d@gmail.com
+      </a>
+      <!-- <div class="contact-links reveal">
+        <a href="#" class="contact-link" data-cursor-hover>Instagram</a>
+        <a href="#" class="contact-link" data-cursor-hover>X (Twitter)</a>
+        <a href="#" class="contact-link" data-cursor-hover>Behance</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="footer-copy">&copy; 2026 moku design. All rights reserved.</span>
+    <a href="#hero" class="footer-top-btn" data-cursor-hover>
+      <svg viewBox="0 0 24 24">
+        <line x1="12" y1="19" x2="12" y2="5" />
+        <polyline points="5,12 12,5 19,12" />
+      </svg>
+      トップへ戻る
+    </a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
