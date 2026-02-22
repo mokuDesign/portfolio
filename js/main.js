@@ -6,6 +6,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ============================
+  // Copyright Year
+  // ============================
+  const yearEl = document.getElementById('copyright-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // ============================
   // Loading Screen
   // ============================
   const loadingScreen = document.getElementById('loading');

@@ -1236,22 +1236,23 @@ mark.text-marker {
   line-height: 2;
 }
 
-.contact-email {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--sp-2);
-  font-family: var(--ff-en);
-  font-size: clamp(1.2rem, 3vw, 2rem);
+.contact-btn {
+  display: inline-block;
+  font-family: var(--ff-ja);
+  font-size: 1rem;
   font-weight: var(--fw-semibold);
-  letter-spacing: -0.01em;
-  position: relative;
-  padding-bottom: 4px;
-  border-bottom: 2px solid var(--c-gray-600);
-  transition: border-color var(--duration-fast) ease;
+  letter-spacing: 0.1em;
+  padding: 1em 3em;
+  background-color: var(--c-yellow);
+  color: var(--c-black);
+  border: 2px solid var(--c-yellow);
+  transition: background-color var(--duration-fast) ease,
+    color var(--duration-fast) ease;
 }
 
-.contact-email:hover {
-  border-color: var(--c-white);
+.contact-btn:hover {
+  background-color: transparent;
+  color: var(--c-yellow);
 }
 
 .contact-links {
@@ -1426,8 +1427,9 @@ mark.text-marker {
     gap: var(--sp-2);
   }
 
-  .contact-email {
-    font-size: 1rem;
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 0.8em 2em;
   }
 
   .contact-links {
