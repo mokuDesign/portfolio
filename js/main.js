@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function initHeroAnimation() {
     const heroLines = document.querySelectorAll('.hero-title-line span');
     const heroSubtitle = document.querySelector('.hero-subtitle');
+    const heroCaption = document.querySelector('.hero-caption');
 
     heroLines.forEach((line, index) => {
       setTimeout(() => {
@@ -143,6 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (heroSubtitle) {
       heroSubtitle.classList.add('is-visible');
+    }
+    if (heroCaption) {
+      heroCaption.classList.add('is-visible');
     }
   }
 

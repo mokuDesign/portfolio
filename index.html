@@ -39,6 +39,7 @@
         <li><a href="#about" class="nav-link" data-cursor-hover>プロフィール</a></li>
         <li><a href="#services" class="nav-link" data-cursor-hover>スキルセット</a></li>
         <li><a href="#works" class="nav-link" data-cursor-hover>実績</a></li>
+        <li><a href="#price" class="nav-link" data-cursor-hover>料金</a></li>
         <li><a href="#skills" class="nav-link" data-cursor-hover>スキル</a></li>
         <li><a href="#contact" class="nav-link" data-cursor-hover>お問い合わせ</a></li>
       </ul>
@@ -55,6 +56,7 @@
     <a href="#about" class="nav-link" data-cursor-hover>プロフィール</a>
     <a href="#services" class="nav-link" data-cursor-hover>スキルセット</a>
     <a href="#works" class="nav-link" data-cursor-hover>実績</a>
+    <a href="#price" class="nav-link" data-cursor-hover>料金</a>
     <a href="#skills" class="nav-link" data-cursor-hover>スキル</a>
     <a href="#contact" class="nav-link" data-cursor-hover>お問い合わせ</a>
   </div>
@@ -63,13 +65,42 @@
   <section class="hero section" id="hero">
     <div class="hero-bg-text hero-bg-text--top" data-parallax="0.15">DESIGN</div>
     <div class="hero-bg-text hero-bg-text--bottom" data-parallax="-0.1">DEVELOP</div>
+    <!-- Decorative elements -->
+    <svg class="hero-deco hero-deco--blob1" viewBox="0 0 200 200" fill="none" data-parallax="0.08">
+      <path
+        d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-0.9C87,14.5,81.4,29,72.4,41.1C63.4,53.2,51,62.9,37.3,70.1C23.6,77.3,8.6,82,-7.2,81.5C-23,81,-39.6,75.3,-52.8,65.5C-66,55.7,-75.8,41.8,-80.4,26.3C-85,10.8,-84.4,-6.3,-79.3,-21.5C-74.2,-36.7,-64.6,-50,-51.8,-57.6C-39,-65.2,-23.1,-67.1,-6.4,-71.7C10.3,-76.3,30.6,-83.6,44.7,-76.4Z"
+        transform="translate(100 100)" fill="var(--c-yellow)" opacity="0.06" />
+    </svg>
+    <svg class="hero-deco hero-deco--blob2" viewBox="0 0 200 200" fill="none" data-parallax="-0.06">
+      <path
+        d="M39.5,-65.3C52.9,-60.5,67.1,-54.3,74.8,-43.3C82.5,-32.3,83.7,-16.2,81.8,-1.1C79.9,13.9,74.9,27.8,67.1,40.1C59.3,52.4,48.7,63.1,35.8,69.6C22.9,76.1,7.7,78.4,-6.8,77.1C-21.3,75.8,-35.1,70.9,-47.4,63.2C-59.7,55.5,-70.5,45,-76.2,32C-81.9,19,-82.5,3.5,-79.1,-10.5C-75.7,-24.5,-68.3,-37,-57.8,-46.8C-47.3,-56.6,-33.7,-63.7,-20.1,-68.4C-6.5,-73.1,7.1,-75.4,20.8,-74.3C34.5,-73.2,48.3,-68.7,39.5,-65.3Z"
+        transform="translate(100 100)" fill="var(--c-yellow)" opacity="0.04" />
+    </svg>
+    <svg class="hero-deco hero-deco--scatter" viewBox="0 0 400 400" fill="none" data-parallax="0.1">
+      <circle cx="45" cy="80" r="2.5" fill="var(--c-yellow)" opacity="0.4" />
+      <circle cx="320" cy="50" r="1.5" fill="var(--c-gray-300)" opacity="0.5" />
+      <circle cx="380" cy="180" r="3" fill="var(--c-yellow)" opacity="0.25" />
+      <circle cx="60" cy="300" r="2" fill="var(--c-gray-300)" opacity="0.35" />
+      <circle cx="250" cy="350" r="1.8" fill="var(--c-yellow)" opacity="0.3" />
+      <circle cx="150" cy="40" r="1.2" fill="var(--c-yellow)" opacity="0.5" />
+      <circle cx="370" cy="320" r="2.2" fill="var(--c-gray-300)" opacity="0.3" />
+    </svg>
+    <svg class="hero-deco hero-deco--cross" viewBox="0 0 24 24" fill="none" data-parallax="-0.1">
+      <line x1="4" y1="12" x2="20" y2="12" stroke="var(--c-yellow)" stroke-width="1" opacity="0.35" />
+      <line x1="12" y1="4" x2="12" y2="20" stroke="var(--c-yellow)" stroke-width="1" opacity="0.35" />
+    </svg>
+    <svg class="hero-deco hero-deco--arc" viewBox="0 0 120 120" fill="none" data-parallax="0.07">
+      <path d="M10,110 A100,100 0 0,1 110,10" stroke="var(--c-yellow)" stroke-width="0.8" opacity="0.2"
+        stroke-dasharray="4 6" />
+    </svg>
     <div class="hero-content">
       <img src="img/logo.png" alt="moku design" class="hero-logo-img">
       <h1 class="hero-title">
-        <span class="hero-title-line"><span>Design that</span></span>
-        <span class="hero-title-line"><span>speaks.</span></span>
+        <span class="hero-title-line"><span><mark class="hero-marker">Design</mark> that</span></span>
+        <span class="hero-title-line"><span><mark class="hero-marker">speaks.</mark></span></span>
       </h1>
       <p class="hero-subtitle">想いを形に、デザインで伝える。</p>
+      <p class="hero-caption">大手広告代理店 テクニカルマネージャー / フリーランスデザイナー</p>
     </div>
     <div class="hero-scroll">
       <span class="hero-scroll-text">Scroll</span>
@@ -87,19 +118,17 @@
           <img src="img/logo.png" alt="moku design" class="about-image">
         </div>
         <div class="about-text reveal-right">
-          <h3>大手広告代理店10年勤務の経験を活かした<br>クオリティを提供します。</h3>
+          <h3>画像一枚から、サイト丸ごと。<br>1の情報を100まで察します。</h3>
+          <p class="about-intro">京都出身・東京在住の30代。居酒屋巡りが趣味のクリエイターです。</p>
           <p>
-            デザイナー、ディレクター、フロントエンドエンジニアとして広告代理店で10年間、多種多様なプロジェクトに携わってきました。
+            2005年からコードを書き続け、現在も大手広告代理店にてテクニカルマネージャーとして50名規模のチームを率いながら、デザイナー・ディレクター・フロントエンドエンジニアとしてIT・金融・決済・EC・エンタメなど幅広い業界の大手クライアントと向き合っています。
           </p>
           <p>
-            企画・デザインからコーディング・運用まで、
-            ワンストップで対応できることが強みです。
-            クライアントのビジネスを深く理解し、
-            成果につながるデザインをご提案します。
+            大手レコード会社所属アーティストのアートワーク制作や、自身もアーティストとして国内最大級の音楽フェスへの出演経験で培った"人を動かす表現力"。アパレル・化粧品ECの運営で磨いた"売上につながる視点"。現場のマネジメントで鍛えた判断力と推進力を活かし、企画・デザインからコーディング・運用までワンストップで対応します。
           </p>
           <div class="about-stats">
             <div class="reveal">
-              <div class="about-stat-number">10+</div>
+              <div class="about-stat-number">20+</div>
               <div class="about-stat-label">年の経験</div>
             </div>
             <div class="reveal">
@@ -109,6 +138,10 @@
             <div class="reveal">
               <div class="about-stat-number">50+</div>
               <div class="about-stat-label">クライアント</div>
+            </div>
+            <div class="reveal">
+              <div class="about-stat-number">50</div>
+              <div class="about-stat-label">名のチーム運営</div>
             </div>
           </div>
         </div>
@@ -138,6 +171,7 @@
           <p class="service-card-desc">
             ユーザー体験を重視した、美しく機能的なWebサイトをデザインします。
             ブランドの世界観を的確に表現し、成果につながるデザインを。
+            サーバー構築やドメイン取得、社内インフラ構築まで対応可能です。
           </p>
           <div class="service-card-line"></div>
         </div>
@@ -216,14 +250,14 @@
 
       <div class="works-grid stagger-children">
         <div class="work-card reveal" data-category="web wordpress" data-cursor-hover>
-          <img src="img/works/ymnk.png" alt="山中商事 コーポレートサイト" class="work-card-image">
+          <img src="img/works/yamanaka-corporate.png" alt="山中商事 コーポレートサイト" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">山中商事様 コーポレートサイト</span>
             <span class="work-card-category">Web Design / WordPress</span>
           </div>
         </div>
         <div class="work-card reveal" data-category="web wordpress" data-cursor-hover>
-          <img src="img/works/intg.png" alt="稲継工務店 コーポレートサイト" class="work-card-image">
+          <img src="img/works/inatsugu-corporate.png" alt="稲継工務店 コーポレートサイト" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">稲継工務店様 コーポレートサイト</span>
             <span class="work-card-category">Web Design / WordPress</span>
@@ -231,7 +265,7 @@
         </div>
 
         <div class="work-card reveal" data-category="graphic" data-cursor-hover>
-          <img src="img/works/rockshow.png" alt="ROCK SHOW フライヤー" class="work-card-image">
+          <img src="img/works/rockshow-flyer.png" alt="ROCK SHOW フライヤー" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">ROCK SHOW イベントフライヤー</span>
             <span class="work-card-category">グラフィック</span>
@@ -239,7 +273,7 @@
         </div>
 
         <div class="work-card reveal" data-category="web" data-cursor-hover>
-          <img src="img/works/skpj.png" alt="志村けんさん銅像プロジェクト" class="work-card-image">
+          <img src="img/works/shimura-project.png" alt="志村けんさん銅像プロジェクト" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">志村けんさん銅像プロジェクト実行委員会様</span>
             <span class="work-card-category">Web Design</span>
@@ -247,7 +281,7 @@
         </div>
 
         <div class="work-card reveal" data-category="graphic" data-cursor-hover>
-          <img src="img/works/miscere_logo.png" alt="miscere サービスロゴ" class="work-card-image">
+          <img src="img/works/miscere-logo.png" alt="miscere サービスロゴ" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">miscere様 サービスロゴ</span>
             <span class="work-card-category">グラフィック</span>
@@ -255,7 +289,7 @@
         </div>
 
         <div class="work-card reveal" data-category="web" data-cursor-hover>
-          <img src="img/works/base.png" alt="Product DIY Base" class="work-card-image">
+          <img src="img/works/inatsugu-base.png" alt="Product DIY Base" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">稲継工務店様 Product DIY Base</span>
             <span class="work-card-category">Web Design</span>
@@ -263,7 +297,7 @@
         </div>
 
         <div class="work-card reveal" data-category="web" data-cursor-hover>
-          <img src="img/works/machiya.png" alt="MACHIYA NEO" class="work-card-image">
+          <img src="img/works/inatsugu-machiya.png" alt="MACHIYA NEO" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">稲継工務店様 MACHIYA NEO</span>
             <span class="work-card-category">Web Design</span>
@@ -271,7 +305,7 @@
         </div>
 
         <div class="work-card reveal" data-category="web" data-cursor-hover>
-          <img src="img/works/riverside.png" alt="リバーサイド嵐山" class="work-card-image">
+          <img src="img/works/riverside-arashiyama.png" alt="リバーサイド嵐山" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">ホテル リバーサイド嵐山様</span>
             <span class="work-card-category">Web Design</span>
@@ -279,7 +313,7 @@
         </div>
 
         <div class="work-card reveal" data-category="web" data-cursor-hover>
-          <img src="img/works/zone.png" alt="DINING BAR ZONE" class="work-card-image">
+          <img src="img/works/diningbar-zone.png" alt="DINING BAR ZONE" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">DINING BAR ZONE様</span>
             <span class="work-card-category">Web Design</span>
@@ -287,7 +321,7 @@
         </div>
 
         <div class="work-card reveal" data-category="graphic" data-cursor-hover>
-          <img src="img/works/intg_logo.png" alt="INATSUGU ロゴデザイン" class="work-card-image">
+          <img src="img/works/inatsugu-logo.png" alt="INATSUGU ロゴデザイン" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">稲継工務店様 ロゴデザイン</span>
             <span class="work-card-category">グラフィック</span>
@@ -295,11 +329,86 @@
         </div>
 
         <div class="work-card reveal" data-category="graphic" data-cursor-hover>
-          <img src="img/works/card.png" alt="稲継工務店 名刺デザイン" class="work-card-image">
+          <img src="img/works/inatsugu-card.png" alt="稲継工務店 名刺デザイン" class="work-card-image">
           <div class="work-card-overlay">
             <span class="work-card-title">稲継工務店様 名刺デザイン</span>
             <span class="work-card-category">グラフィック</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price -->
+  <section class="price section" id="price">
+    <div class="section-inner">
+      <span class="section-label reveal">PRICE</span>
+      <h2 class="section-title reveal">料金目安</h2>
+      <div class="section-divider reveal"></div>
+      <p class="price-note reveal">※ 内容や規模に応じてお見積りいたします。お気軽にご相談ください。</p>
+      <div class="price-table reveal">
+        <div class="price-row price-row-header">
+          <span class="price-item">メニュー</span>
+          <span class="price-value">参考価格</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">Webサイト制作</span>
+          <span class="price-value">&yen;50,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">LP（ランディングページ）制作</span>
+          <span class="price-value">&yen;30,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">WordPress構築・カスタマイズ</span>
+          <span class="price-value">&yen;80,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">ロゴデザイン</span>
+          <span class="price-value">&yen;20,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">バナー・画像制作</span>
+          <span class="price-value">&yen;8,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">名刺デザイン</span>
+          <span class="price-value">&yen;20,000 &sim;</span>
+        </div>
+        <div class="price-row">
+          <span class="price-item">チラシ・フライヤーデザイン</span>
+          <span class="price-value">&yen;25,000 &sim;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="section-inner">
+      <span class="section-label reveal">FAQ</span>
+      <h2 class="section-title reveal">よくある質問</h2>
+      <div class="section-divider reveal"></div>
+      <div class="faq-list">
+        <div class="faq-item reveal" data-cursor-hover>
+          <div class="faq-question">納期はどのくらいですか？</div>
+          <div class="faq-answer">内容がある程度決まっている場合、最短翌日で仕上げます。デコラティブなグラフィックデザインは修正含め1週間ほどお見積りください。お急ぎの方はぜひご相談ください。</div>
+        </div>
+        <div class="faq-item reveal" data-cursor-hover>
+          <div class="faq-question">修正は何回まで対応してもらえますか？</div>
+          <div class="faq-answer">納得いただけるまで対応します。ただし、確定後の大幅なデザイン変更については追加料金をいただく場合がございます。</div>
+        </div>
+        <div class="faq-item reveal" data-cursor-hover>
+          <div class="faq-question">デザインのイメージが固まっていなくても大丈夫ですか？</div>
+          <div class="faq-answer">参考サイトやざっくりとしたご要望だけでもOKです。ヒアリングから一緒に形にしていきます。</div>
+        </div>
+        <div class="faq-item reveal" data-cursor-hover>
+          <div class="faq-question">遠方ですが依頼できますか？</div>
+          <div class="faq-answer">オンラインで全国対応しています。チャットやビデオ通話でやり取り可能です。</div>
+        </div>
+        <div class="faq-item reveal" data-cursor-hover>
+          <div class="faq-question">個人・小規模の依頼でもお願いできますか？</div>
+          <div class="faq-answer">もちろんです。個人事業主の方や小規模店舗のご依頼も歓迎しています。</div>
         </div>
       </div>
     </div>
@@ -359,6 +468,29 @@
             </svg>
           </span>
           <span class="skill-name">After Effects</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="14" rx="2" />
+              <polygon points="10,7 16,10 10,13" />
+              <line x1="3" y1="20" x2="21" y2="20" />
+              <line x1="7" y1="17" x2="7" y2="20" />
+              <line x1="17" y1="17" x2="17" y2="20" />
+            </svg>
+          </span>
+          <span class="skill-name">Premiere Pro</span>
+        </div>
+        <div class="skill-item reveal" data-cursor-hover>
+          <span class="skill-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8 15V9l4 3 4-3v6" />
+            </svg>
+          </span>
+          <span class="skill-name">Logic Pro</span>
         </div>
         <div class="skill-item reveal" data-cursor-hover>
           <span class="skill-icon">
