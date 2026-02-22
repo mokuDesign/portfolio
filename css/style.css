@@ -848,7 +848,7 @@ button {
 .work-card {
   position: relative;
   overflow: hidden;
-  background-color: var(--c-gray-100);
+  background-color: var(--c-gray-200);
   aspect-ratio: 4 / 3;
   cursor: pointer;
   transition: transform var(--duration-fast) var(--ease-out-expo),
